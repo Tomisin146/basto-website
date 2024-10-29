@@ -3,50 +3,206 @@
     padding: 0;
     margin: 0;
 }
-
-.hero{
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url(images/IMG_0026.JPG);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50vh;
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+    position: relative;
 }
-#home{
-    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2));
+/* HEADER*/
+header{
+    background-color: #ccc;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.storeImage{
-    width: 500px;
-    height: 350px;
-    display: block;
-    border-radius: 16px;
+header .logo{
+    color: orangered;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: capitalize;
 }
-.figure{
+header .logo span{
+    background-color: green;
+    color: white;
+    padding: 3px;
+}
+header .calculation{
+    width: 20px;
+    height: 20px;
+    padding: 2px 0 3px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
     cursor: pointer;
 }
-/*footer*/
+
+
+/* CART*/
+.cart{
+    width: 400px;
+    background-color: black;
+    position: fixed;
+    inset: 0 -400px 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 50px;
+    justify-content: center;
+    transition: .4s linear;
+}
+body.show .cart{
+    inset: 0 0 0 auto;
+}
+.cart-header{
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    text-align: center;
+}
+.cart_container{
+    overflow-y: scroll;
+}
+.cart-header h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-transform: capitalize;
+    color: white;
+}
+.cart .cartItem{
+    margin: 10px 0;
+    padding: 0 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+.cart .cartItem img{
+    width: 100%;
+    height: 100px;
+    display: block;
+}
+.cart .cartItem h2{
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    font-size: 18px;
+    padding-left: 10px;
+}
+.cart .cartItem p{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;   
+}
+.quantity span{
+    background-color: rgb(148, 31, 31);
+    color: white;
+    width: 40px;
+    height: 25px;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.buttons button{
+    background-color: orangered;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.buttons button:first-child{
+    background-color: #ccc;
+    color: black;
+}
+
+
+/* PRODUCTS*/
+.head{
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    width: 300px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 1.5px;
+    letter-spacing: 1.5px;
+}
+.products{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.items{
+    border: 2px solid #ccc;
+    text-align: center;
+    box-shadow: 3px 3px 5px #ccc;
+}
+.items img{
+    width: 100%;
+    height: 150px;
+    display: block;
+}
+.items h2{
+    font-family: cursive;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.items p{
+    font-weight: bolder;
+    font-size: 18px;
+}
+.items button{
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 7px 20px;
+    margin: 10px 0;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+
+
+
+/* FOOTER*/
 footer{
     background-color: black;
     color: white;
+    width: 100%;
+    margin-top: 50px;
+    padding: 20px;
+}
+footer li{
+    list-style-type: none;
 }
 
-@media screen and (max-width: 1200px) {
-    .storeImage{
-        width: 300px;
-    }
-}
 
-@media screen and (max-width: 1080px) {
-    .textContent:first-child h1{
-        font-size: 30px;
-    }
-    .textContent:first-child h2{
-        font-size: 25px;
+@media screen and (max-width: 950px) {
+    .products{
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media screen and (max-width: 991px) {
-    .storeImage{
-        margin: 10px auto;
-        width: 100%;;
+
+@media screen and (max-width: 650px) {
+    .products{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/* 992px  768px*/

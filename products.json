@@ -1,0 +1,98 @@
+[ 
+    {
+        "id": 1,
+        "img": "img/book2.jpg",
+        "name": "physics",
+        "price": 3000
+    },
+    {
+        "id": 2,
+        "img": "img/book3.jpg",
+        "name": "home text",
+        "price": 1000
+    },
+    {
+        "id": 3,
+        "img": "img/book4.jpg",
+        "name": "comics notebook",
+        "price": 4000
+    },
+    {
+        "id": 4,
+        "img": "img/book5.jpg",
+        "name": "social studies",
+        "price": 2500
+    },
+    {
+        "id": 5,
+        "img": "img/book6.jpg",
+        "name": "englsi",
+        "price": 3000
+    },
+    {
+        "id": 6,
+        "img": "img/book7.jpg",
+        "name": "science",
+        "price": 1000
+    },
+    {
+        "id": 7,
+        "img": "img/book8.jpg",
+        "name": "government",
+        "price": 4000
+    },
+    {
+        "id": 8,
+        "img": "img/book9.jpg",
+        "name": "yoruba",
+        "price": 2500
+    },
+    {
+        "id": 9,
+        "img": "img/book10.jpg",
+        "name": "agric",
+        "price": 3000
+    },
+    {
+        "id": 10,
+        "img": "img/istockphoto-145121670-2048x2048.jpg",
+        "name": "civic education",
+        "price": 1000
+    },
+    {
+        "id": 11,
+        "img": "img/book4.jpg",
+        "name": "tech notebook",
+        "price": 4000
+    },
+    {
+        "id": 12,
+        "img": "img/book5.jpg",
+        "name": "health education",
+        "price": 2500
+    },
+    {
+        "id": 13,
+        "img": "img/book2.jpg",
+        "name": "physical eduction",
+        "price": 3000
+    },
+    {
+        "id": 14,
+        "img": "img/book3.jpg",
+        "name": "biology",
+        "price": 1000
+    },
+    {
+        "id": 15,
+        "img": "img/book4.jpg",
+        "name": "english language",
+        "price": 4000
+    },
+    {
+        "id": 16,
+        "img": "img/book5.jpg",
+        "name": "crk",
+        "price": 2500
+    }
+]
